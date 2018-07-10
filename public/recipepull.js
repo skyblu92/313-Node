@@ -19,7 +19,7 @@ function foodSearch() {
 
 	console.log("Search:", searchQ);
 
-    var url = "http://food2fork.com/api/search?key=61a94da8e2726b8b65a1cb92add68d50&q=" + searchQ;
+    var url = "https://food2fork.com/api/search?key=61a94da8e2726b8b65a1cb92add68d50&q=" + searchQ;
     
 	callAjax(url, handleResultList)
 }
