@@ -19,14 +19,9 @@ function foodSearch() {
 
 	console.log("Search:", searchQ);
 
-	// TODO: We should check to see if book is empty
-	// TODO: We should make sure the text is properly URL encoded
-    var url = "/recipepull?searchQ=" + searchQ;
+    var url = "http://food2fork.com/api/search?key=61a94da8e2726b8b65a1cb92add68d50&q=" + searchQ;
     
-    //61a94da8e2726b8b65a1cb92add68d50 ---- KEY FOR
-
 	callAjax(url, handleResultList)
-
 }
 
 function handleResultList(result) {
