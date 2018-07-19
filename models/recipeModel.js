@@ -10,9 +10,7 @@ function getRecipeList(searchQ, callback) {
 	}
 
 	// In a minute, we're going to do DB stuff here...
-	var result = request(url, {json: true}, (err, res, body) => {
-		if (err) { return console.log(err); }
-	});
+	var result = 'asdf';
 
 	callback(null, result);
 }

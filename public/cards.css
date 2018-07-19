@@ -1,0 +1,76 @@
+.column {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    justify-content: center;
+    min-height: 100vh;
+    cursor: pointer;
+}
+
+
+.column h2 {
+    z-index: 1000;
+    position:absolute;
+}
+
+.column .img {
+    object-fit: cover;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #dd6b6b8f;
+
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#login {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.skip {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 20;
+    bottom: 50;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#status {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(151, 65, 231, 0.452);
+
+}
+
+#clicker {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
