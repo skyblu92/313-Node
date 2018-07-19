@@ -3,7 +3,9 @@
     width: 33%;
     overflow: hidden;
     justify-content: center;
-    min-height: 100vh;
+    border: 3px;
+    min-height: 70vh;
+    max-height: 70vh;
     cursor: pointer;
 }
 

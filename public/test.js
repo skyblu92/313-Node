@@ -28,6 +28,7 @@ function getRecipeInfo() {
 }
 
 function sendRec(num) {
+    window.open(obj.recipes[num].source_url);
     var params = {num: num};
     $.post("/sendRec", num, function(thing) {
         $("#food" + num).append('<p>Sent!</p>');

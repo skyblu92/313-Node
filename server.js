@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var request = require("request");
+var bodyParser = require('body-parser');
 
 var controller = require("./controllers/recipeController.js");
 
@@ -15,6 +16,7 @@ app.set("port", process.env.PORT || 5000)
   .get("/getRecipeInfo", getRecipeInfo)
   .post('/sendRec', sendRec)
   .use(express.static(__dirname + "/public"))
+  .use(bodyParser.toString)
   .listen(app.get("port"), function() {
   	console.log("Listening on port", app.get("port"));
   });
@@ -38,7 +40,7 @@ function getRecipeInfo(request, response) {
 }
 
 function sendRec(request, response) {
-  var thing = request.body.num;
+  var thing = request.body.params;
   console.log(thing);
 }
 
