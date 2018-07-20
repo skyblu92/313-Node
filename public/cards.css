@@ -17,6 +17,8 @@
 
 .column .img {
     object-fit: cover;
+    width: 100%;
+    background-size: cover;
 }
 
 /* Clear floats after the columns */
